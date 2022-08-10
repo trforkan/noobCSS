@@ -1,0 +1,68 @@
+<div class="container">
+  <h2 class="container__title">Project Overview</h2>
+
+  <div class="container__columns">
+    <div class="container__columns__column-1">
+
+      <header class="container__columns__column-1__menu">
+        <ul class="container__columns__column-1__menu__items">
+          <li class="container__columns__column-1__menu__items__list" *ngFor="let menuList of menuLists">
+            <a (click)="routeLink(menuList)" class="container__columns__column-1__menu__items__list__attribute">{{menuList}}</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="container__columns__column-1__body">
+
+        <router-outlet></router-outlet>
+
+      </div>
+
+
+    </div>
+
+    <div class="container__columns__column-2">
+      <!-- column 2 -->
+      <div class="container__columns__column-2__area">
+        <button class="container__columns__column-2__area__button" mat-raised-button>COLLABORATIVE</button>
+
+        <div class="container__columns__column-2__area__img">
+          <img src="assets/img_avatar.png" alt="" class="container__columns__column-2__area__img__profile">
+        </div>
+
+        <div class="container__columns__column-2__area__profile-name">
+          <h2>Mr X / XYZ Organization</h2>
+          <button mat-button><mat-icon>edit</mat-icon></button>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="container__columns__column-2__area__location">
+          <mat-icon class="container__columns__column-2__area__location__icon">place</mat-icon>
+          Dhanmondi 27, Dhaka
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="container__columns__column-2__area__description">
+          <span>Domain : <a href="xyz.com">xyz.com</a></span>
+          <span>Discipline : <b>Painting</b></span>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="container__columns__column-2__area__person-details">
+          <img class="container__columns__column-2__area__person-details__dp-image" src="assets/img_avatar.png" alt="">
+          <div class="container__columns__column-2__area__person-details__contact">
+            <span>Mr XYZ</span>
+            <mat-hint>xyz@selise.ch</mat-hint>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

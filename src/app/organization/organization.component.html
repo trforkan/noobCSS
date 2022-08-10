@@ -1,0 +1,21 @@
+<p>Organization List</p>
+
+
+<mat-accordion class="radio-items" *ngFor="let radioItem of radioItems index as i">
+
+  <mat-expansion-panel class="radio-items__panel">
+    <mat-expansion-panel-header class="radio-items__panel__header">
+      <mat-panel-title class="radio-items__panel__header__title">
+        <mat-radio-button [disabled]="!radioItem.ok" class="radio-items__panel__header__title__radiobtn" >
+          Organization {{radioItem.name}}
+        </mat-radio-button>
+      </mat-panel-title>
+      <mat-panel-description class="radio-items__panel__header__desc">
+        This is the description of expansion panel
+        <mat-slide-toggle [checked]="radioItem.ok" (toggleChange)="toggleEvent(i)" class="radio-items__panel__header__desc__toggle">{{radioItem.ok}}</mat-slide-toggle>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>this is the elements inside the expansion panel</p>
+  </mat-expansion-panel>
+
+</mat-accordion>

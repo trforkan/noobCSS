@@ -5,10 +5,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CSSTricksComponent } from './css-tricks/css-tricks.component';
+import { OrganizationComponent } from './organization/organization.component';
+import { PhaseComponent } from './phase/phase.component';
+import { DisciplineComponent } from './discipline/discipline.component';
+import { RecurringReportComponent } from './recurring-report/recurring-report.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CSSTricksComponent,
+    OrganizationComponent,
+    PhaseComponent,
+    DisciplineComponent,
+    RecurringReportComponent
   ],
   imports: [
     BrowserModule,

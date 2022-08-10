@@ -1,0 +1,140 @@
+.container {
+  background-color: rgb(218, 214, 214);
+  height: 100%;
+  width: 100%;
+
+  &__title {
+    padding: 20px;
+  }
+
+  &__columns {
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    // width: 100%;
+    margin: auto;
+
+
+    &__column-1 {
+      margin-left: 20px;
+      width: 66%;
+      height: 100%;
+      background-color: aliceblue;
+      border-radius: 5px;
+
+      &__menu {
+        border-bottom: 1px solid black;
+        &__items {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          padding-left: 0px;
+          // padding-right: 15px;
+
+          &__list {
+            &__attribute {
+              text-decoration: none;
+              color: black;
+            }
+
+          }
+
+        }
+      }
+
+      &__body {
+        margin: 20px;
+
+      }
+
+    }
+
+    &__column-2 {
+      margin-right: 20px;
+      margin-left: 20px;
+      width: 33%;
+      height: 100%;
+      background-color: aliceblue;
+      border-radius: 5px;
+      // border: 1px solid red;
+
+
+      &__area {
+
+        margin: 20px;
+        // border: 1px solid black;
+        // display: flex;
+        flex-direction: column;
+
+        &__button {
+          width: 150px;
+        }
+
+        &__img {
+          display: flex;
+          justify-content: center;
+          // align-items: center;
+          // flex-direction: column;
+
+          &__profile {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid red;
+          }
+        }
+
+        &__profile-name {
+          margin-top: 15px;
+          display: inline-flex;
+          justify-content: space-between;
+        }
+
+        &__location {
+          // border: 1px solid black;
+
+          padding-top: 6px;
+          padding-bottom: 15px;
+          &__icon {
+            padding-right: 20px;
+          }
+        }
+
+        &__description {
+          margin-top: 15px;
+          padding-bottom: 15px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__person-details {
+          margin-top: 15px;
+          display: flex;
+          align-items: center;
+          &__dp-image {
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+          &__contact{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+}
