@@ -5,11 +5,11 @@
     <div class="container__columns__column-1">
 
       <header class="container__columns__column-1__menu">
-        <ul class="container__columns__column-1__menu__items">
-          <li class="container__columns__column-1__menu__items__list" *ngFor="let menuList of menuLists">
-            <a (click)="routeLink(menuList)" class="container__columns__column-1__menu__items__list__attribute">{{menuList}}</a>
-          </li>
-        </ul>
+        <mat-tab-group color="accent" mat-stretch-tabs animationDuration="1500ms" mat-align-tabs="center" class="container__columns__column-1__menu__items">
+          <mat-tab [label]="menuList" class="container__columns__column-1__menu__items__list" *ngFor="let menuList of menuLists">
+            <!-- {{menuList}} -->
+          </mat-tab>
+        </mat-tab-group>
       </header>
 
       <div class="container__columns__column-1__body">

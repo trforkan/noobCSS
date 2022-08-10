@@ -6,6 +6,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTabsModule } from '@angular/material/tabs'
 
 
 const Material = [
@@ -15,7 +16,8 @@ const Material = [
   MatSlideToggleModule,
   MatButtonModule,
   MatDividerModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatTabsModule
 ];
 
 

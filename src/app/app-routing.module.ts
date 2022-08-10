@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: "", component: CSSTricksComponent , children: [
+    { path: "", component: OrganizationComponent },
     { path: "organization", component: OrganizationComponent },
     { path: "phase", component: PhaseComponent },
     { path: "discipline", component: DisciplineComponent },

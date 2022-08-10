@@ -1,3 +1,11 @@
+.title {
+  display: flex;
+  &__icon {
+    margin-right: 15px;
+  }
+}
+
+
 .radio-items {
   margin-bottom: 10px;
   border-radius: 5px;
