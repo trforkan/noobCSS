@@ -5,10 +5,14 @@
     <div class="container__columns__column-1">
 
       <header class="container__columns__column-1__menu">
-        <mat-tab-group color="accent" mat-stretch-tabs animationDuration="1500ms" mat-align-tabs="center" class="container__columns__column-1__menu__items">
-          <mat-tab [label]="menuList" class="container__columns__column-1__menu__items__list" *ngFor="let menuList of menuLists">
-            <!-- {{menuList}} -->
-          </mat-tab>
+        <mat-tab-group (selectedTabChange)="routeLink($event)" color="accent" mat-stretch-tabs animationDuration="1500ms" mat-align-tabs="center" class="container__columns__column-1__menu__items">
+          <ng-container *ngFor="let menuList of menuLists">
+
+              <mat-tab [label]="menuList" class="container__columns__column-1__menu__items__list" >
+              </mat-tab>
+
+          </ng-container>
+
         </mat-tab-group>
       </header>
 
@@ -24,14 +28,18 @@
     <div class="container__columns__column-2">
       <!-- column 2 -->
       <div class="container__columns__column-2__area">
-        <button class="container__columns__column-2__area__button" mat-raised-button>COLLABORATIVE</button>
+
+        <div class="container__columns__column-2__area__buttons">
+          <button class="container__columns__column-2__area__buttons__btn-1" mat-button>COLLABORATIVE</button>
+          <button  mat-icon-button><mat-icon>close</mat-icon></button>
+        </div>
 
         <div class="container__columns__column-2__area__img">
           <img src="assets/img_avatar.png" alt="" class="container__columns__column-2__area__img__profile">
         </div>
 
         <div class="container__columns__column-2__area__profile-name">
-          <h2>Mr X / XYZ Organization</h2>
+          <h2 class="container__columns__column-2__area__profile-name__header">Mr X / XYZ Organization</h2>
           <button mat-button><mat-icon>edit</mat-icon></button>
         </div>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,10 +11,10 @@ export class CSSTricksComponent implements OnInit {
 
 
   menuLists: string[] = [
-    "ORGANIZATION",
-    "PHASE",
-    "DISCIPLINE",
-    "RECURRING-REPORT-PRESET"
+    "Organization",
+    "Phase",
+    "Discipline",
+    "Recurring Report Preset"
   ];
 
 
@@ -22,8 +23,11 @@ export class CSSTricksComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  routeLink(value: string) {
-    this.router.navigateByUrl('/'+value.toLowerCase());
+  routeLink(value: MatTabChangeEvent) {
+    const urlName = this.menuLists[value.index];
+    const url = urlName.split(' ').join('+')
+    console.log(url);
+    this.router.navigateByUrl('/'+url.toLowerCase());
   }
 
 }

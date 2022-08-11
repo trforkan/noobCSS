@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-phase',
-  templateUrl: './phase.component.html',
-  styleUrls: ['./phase.component.scss']
+  selector: 'app-expansiondata',
+  templateUrl: './expansiondata.component.html',
+  styleUrls: ['./expansiondata.component.scss']
 })
-export class PhaseComponent implements OnInit {
+export class ExpansiondataComponent implements OnInit {
+
+  @Input() itemName: string | null = "Organization";
 
   radioItems: any[] = [
     { name: "List 0001", ok: true },

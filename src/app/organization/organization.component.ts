@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class OrganizationComponent implements OnInit {
 
   radioItems: any[] = [
-    { name: "List 1", ok: true },
-    { name: "List 2", ok: true },
-    { name: "List 3", ok: true },
-    { name: "List 4", ok: true },
-    { name: "List 5", ok: true },
+    { name: "List 0001", ok: true },
+    { name: "List 0002", ok: true },
+    { name: "List 0003", ok: true },
+    { name: "List 0004", ok: true },
+    { name: "List 0005", ok: true },
   ]
 
   constructor() { }

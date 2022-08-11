@@ -12,7 +12,7 @@ const routes: Routes = [
     { path: "organization", component: OrganizationComponent },
     { path: "phase", component: PhaseComponent },
     { path: "discipline", component: DisciplineComponent },
-    { path: "recurring-report-preset", component: RecurringReportComponent },
+    { path: "recurring+report+preset", component: RecurringReportComponent },
   ]}
 ];
 

@@ -7,19 +7,50 @@
 
 <mat-accordion class="radio-items" *ngFor="let radioItem of radioItems index as i">
 
-  <mat-expansion-panel class="radio-items__panel">
+  <mat-expansion-panel class="mat-elevation-z0 radio-items__panel">
+
     <mat-expansion-panel-header class="radio-items__panel__header">
+
       <mat-panel-title class="radio-items__panel__header__title">
         <mat-radio-button [disabled]="!radioItem.ok" class="radio-items__panel__header__title__radiobtn" >
-          Organization {{radioItem.name}}
+          <b class="radio-items__panel__header__title__radiobtn__name">Organization {{radioItem.name}}</b>
+
+          <mat-hint class="radio-items__panel__header__title__radiobtn__hint">by Mr X | Date</mat-hint>
         </mat-radio-button>
       </mat-panel-title>
+
       <mat-panel-description class="radio-items__panel__header__desc">
-        This is the description of expansion panel
+        <!-- This is the description of expansion panel -->
         <mat-slide-toggle color="secondary" [checked]="radioItem.ok" (toggleChange)="toggleEvent(i)" class="radio-items__panel__header__desc__toggle"></mat-slide-toggle>
       </mat-panel-description>
+
     </mat-expansion-panel-header>
-    <p>this is the elements inside the expansion panel</p>
+
+    <mat-divider></mat-divider>
+    <!-- <p>this is the elements inside the expansion panel</p> -->
+    <div class="radio-items__panel__inside">
+      <div class="radio-items__panel__inside__row">
+        <p class="radio-items__panel__inside__row__para">Print Size: A3 Portrait</p>
+        <p class="radio-items__panel__inside__row__para">Print Type: Standard</p>
+        <div class="radio-items__panel__inside__row__div">
+          <span>Recurrent Date and Time: Weekly</span>
+          <span>Days: Monday, Tuesday, Wednesday</span>
+        </div>
+        <p>Date Range : Start_Date - End_Date</p>
+      </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="radio-items__panel__inside">
+      <div class="radio-items__panel__inside__row">
+        <b>Report Download</b>
+        <mat-hint class="radio-items__panel__inside__row__hint">Repeats every week on Monday</mat-hint>
+      </div>
+    </div>
+
+
+
   </mat-expansion-panel>
 
 </mat-accordion>

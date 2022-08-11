@@ -10,6 +10,7 @@ import { OrganizationComponent } from './organization/organization.component';
 import { PhaseComponent } from './phase/phase.component';
 import { DisciplineComponent } from './discipline/discipline.component';
 import { RecurringReportComponent } from './recurring-report/recurring-report.component';
+import { ExpansiondataComponent } from './expansiondata/expansiondata.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RecurringReportComponent } from './recurring-report/recurring-report.co
     OrganizationComponent,
     PhaseComponent,
     DisciplineComponent,
-    RecurringReportComponent
+    RecurringReportComponent,
+    ExpansiondataComponent
   ],
   imports: [
     BrowserModule,

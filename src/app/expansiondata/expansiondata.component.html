@@ -1,7 +1,7 @@
 
 <div class="title">
   <mat-icon class="title__icon">view_list</mat-icon>
-  <h3 class="title__name"><b>Phase List</b></h3>
+  <h3 class="title__name"><b>{{itemName}} List</b></h3>
 </div>
 
 
@@ -13,7 +13,7 @@
 
       <mat-panel-title class="radio-items__panel__header__title">
         <mat-radio-button [disabled]="!radioItem.ok" class="radio-items__panel__header__title__radiobtn" >
-          <b class="radio-items__panel__header__title__radiobtn__name">Phase {{radioItem.name}}</b>
+          <b class="radio-items__panel__header__title__radiobtn__name">{{itemName}} {{radioItem.name}}</b>
 
           <mat-hint class="radio-items__panel__header__title__radiobtn__hint">by Mr X | Date</mat-hint>
         </mat-radio-button>
